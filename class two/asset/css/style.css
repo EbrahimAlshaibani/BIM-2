@@ -1,0 +1,41 @@
+*{
+    font-family: 'Cairo Play' , sans-serif;
+}
+body{
+    color: #000;
+    /* margin: 0;
+    padding: 0; */
+}
+h1{
+    color: red;
+    font-weight: 100;
+}
+.title{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    display: inline-block;
+    padding: 10px 10px 10px 10px; /* top right bottom left*/
+    margin: 10px 10px 10px 10px; /* top right bottom left*/
+    border-radius: 10px 2px 2px 10px;
+    box-shadow: #0d0d0d7b 0 0 5px 1px ;
+                  /* #00   00   00  00
+                  red green blue */
+    font-weight: 500;
+    border: red solid 1px;
+}
+#title{
+    color: coral;
+}
+.paragraph{
+    margin: 0 200px;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.5;
+    text-transform: unset;
+    box-shadow: #0d0d0d7b 0 0 5px 1px ;
+    padding: 10px;
+    border-radius: 5px;
+    /* text-shadow: rgba(142, 19, 0, 0.503) 0px 0 10px;  */
+    text-rendering: optimizeSpeed;  
+    text-orientation: upright;
+}
