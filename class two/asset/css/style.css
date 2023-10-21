@@ -1,5 +1,7 @@
 *{
     font-family: 'Cairo Play' , sans-serif;
+    scroll-behavior: smooth;
+    accent-color: navy;
 }
 body{
     color: #000;
@@ -38,4 +40,95 @@ h1{
     /* text-shadow: rgba(142, 19, 0, 0.503) 0px 0 10px;  */
     text-rendering: optimizeSpeed;  
     text-orientation: upright;
+}
+
+/* .main-list li a{
+    text-decoration: none;
+    color: white;
+}
+.main-list li{
+    background-color: navy;
+}
+.main-list{
+    padding: 10px;
+    background-color: bisque;
+} */
+/* h1{
+    color:red;
+}
+.title{
+    font-size: 32px;
+}
+
+*/
+.btn{
+    background-color: navy;
+    border: none;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+    animation: animate 3s linear infinite;
+    display: inline-block;
+    width: 100px;
+}
+@keyframes animate {
+    /* 0%{
+        rotate: 360deg;
+    } */
+    /* 25%{
+        rotate: 10deg;
+    }
+    50%{
+        rotate: 0deg;
+    }
+    75%{
+        rotate: -10deg;
+    } */
+    /* 100%{
+        rotate: 0deg;
+    } */
+    /* 0%{
+        transform: scale(10);
+    }
+    50%{
+        transform: scale(5);
+    }
+    100%{
+        transform: scale(10);
+    } */
+}
+.btn:focus{
+    background-color: rgb(50, 50, 177);
+    box-shadow: #00000040 0 0 0px 2px;
+}
+.btn:hover{
+    border-radius: 2px;
+    transition: 0.5s;
+}
+.btn:disabled{
+    cursor: auto;
+    background-color: rgb(125, 125, 184);
+}
+
+.btn:disabled:hover{
+    border-radius: 8px;
+}
+ul li a,p{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 10px 20px;
+} 
+
+.flex-container{
+    display: flex;
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: beige;
+}
+li{
+    list-style: circle;
 }

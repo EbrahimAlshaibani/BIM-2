@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="height: 250vh;">
+    <!-- 
+        static
+        relative
+        fixed
+        absolute
+        sticky
+     -->
+     <style>
+        .rel{
+            position: relative;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+        .content{
+            position: absolute;
+            /* top: -50px; */
+            /* left: 0;
+            right: 0; */
+            /* top: 0; */
+            /* bottom: 50%;
+            right: 50%; */
+            background-color: red;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            top: calc(50% - 5px);
+            /* top: 50%; */
+            left: calc( 50% - 5px);
+            z-index: 100;
+            color: rgb(174, 0, 0);
+        }
+        .title{
+            background-color: red;
+            color: white;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+     </style>
+     <img src="../class two/asset/images/r_2080368_znDCZ.jpg" width="100" alt="">
+    <div class="rel">
+        <div class="content">
+            
+         </div>
+    </div>
+
+
+    <h1 class="title">Title</h1>
+
+
+
+     <!-- <style>
+        .container {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        .relative {
+            position: relative;
+            top: 30px;
+            left: 30px;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: lightcoral;
+            padding: 10px;
+        }
+
+        .static {
+            background-color: lightgoldenrodyellow;
+            padding: 10px;
+        }
+    </style> -->
+
+    <!-- <div class="container">
+        <div class="absolute">Absolute Position</div>
+        <div class="relative">Relative Position</div>
+        <div class="fixed">Fixed Position</div>
+        <div class="static">Static Position (Default)</div>
+    </div> -->
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property Examples</title>
+    <style>
+        .container {
+            margin-bottom: 20px;
+        }
+
+        .box {
+            /* height: 50px;
+            width: 50px; */
+
+            background-color: lightblue;
+            border: 1px solid darkblue;
+            margin: 5px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .inline {
+            display: inline;
+        }
+
+        .block {
+            display: block;
+        }
+
+        .contents {
+            display: contents;
+        }
+
+        .flex {
+            display: flex;
+             /* flex-direction: row-reverse; */
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .inline-block {
+            display: inline-block;
+        }
+
+        .inline-flex {
+            display: inline-flex;
+        }
+
+        .inline-grid {
+            display: inline-grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .none {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box inline">Inline</div>
+        <div class="box block">Block</div>
+        <div class="box contents">Contents</div>
+        <div class="box flex">Flex</div>
+        <div class="box grid">Grid</div>
+        <div class="box inline-block">Inline Block</div>
+        <div class="box inline-flex">Inline Flex</div>
+        <div class="box inline-grid">Inline Grid</div>
+        <div class="box none">None</div>
+    </div>
+
+
+
+
+    <style>
+        .d-grid{
+            /* display: inline; */
+            /*
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            height: 300px; */
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 30px;
+            background-color: aquamarine;
+        }
+        h1{
+            background-color: bisque;
+            /* display: inline; */
+        }
+    </style>
+
+    <div class="d-grid">
+        <h1>Test</h1>
+        <h1>Test</h1>
+        <h1>Test</h1>
+        <h1>Test</h1>
+        <h1>Test</h1>
+        <h1>Test</h1>
+        <h1>Test</h1>
+        <h1>Test</h1>
+        <h1>Test</h1>
+        <h1>Test</h1>
+    </div>
+
+
+    <style>
+        .d-flex{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+    </style>
+    <div class="d-flex">
+        <h1>اهلا</h1>
+        <h1>Hi</h1>
+        <h1>Hola</h1>
+    </div>
+
+</body>
+
+</html>
