@@ -1,0 +1,4 @@
+composer create-project laravel/laravel first-laravel-project
+#cd first-laravel-project 
+#code .
+php artisan serve

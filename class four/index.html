@@ -6,14 +6,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="vendor/bs/css/bootstrap.min.css">
     <script src="vendor/bs/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <style>
     .carousel-item img{
-        height: 100vh;
+        height: 50vh;
         object-fit: cover;
     }
 </style>
-<body style="height: 200vh;">
+<body style="height: 200vh;" data-bs-theme="">
     <header>
         <!-- <h2>hi</h2>
         <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
@@ -64,7 +65,7 @@
               </div>
             </div>
           </nav> -->
-          <nav class="navbar bg-body-tertiary fixed-top "data-bs-theme="dark">
+          <nav class="navbar fixed-top  bg-body-tertiary border" >
             <div class="container">
               <a class="navbar-brand" href="#">Offcanvas navbar</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -107,7 +108,8 @@
           </nav>
     </header>
     <main>
-        <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      
+        <!-- <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -231,8 +233,355 @@
                 </h1>
               </div>
 
+              <!-- <button type="button" class="btn btn-primary position-relative">
+                Profile
+                <span class="position-absolute top-0 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
+                  99+
+                  <span class="visually-hidden">New alerts</span>
+                </span>
+              </button> -->
+              <!-- <button type="button" class="btn btn-outline-success btn-sm d-block">Primary</button> -->
+
+              <!-- <div class="btn-group-vertical" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" >
+                <label class="btn btn-outline-danger" for="btnradio1">Radio 1</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"checked>
+                <label class="btn btn-outline-danger" for="btnradio2">Radio 2</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-danger" for="btnradio3">Radio 3</label>
+              </div> -->
+              <!-- <p class="d-inline-flex gap-1">
+                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  Button with data-bs-target
+                </button>
+              </p>
+              <div class="collapse collapse-horizontal" id="collapseExample">
+                <div class="card card-body">
+                  <div class="card text-center text-secondary border-primary shadow" >
+                    <div class="card-header">
+                      <ul class="nav nav-pills card-header-pills">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="true" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" class="card-img-top rounded-0" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <hr>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     
+                      <button type="button" class="btn btn-primary d-block w-100">Primary</button> -->
+    
+                    <!-- </div> -->
+                    <!-- <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" class="card-img-bottom rounded-0" alt="..."> -->
+    
+                    <!-- <div class="card-footer">
+                      Card footer
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="container-fuild justify-content-between d-flex">
+              <div class="card text-center text-secondary border-primary shadow" >
+                <div class="card-header">
+                  <ul class="nav nav-pills card-header-pills">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="true" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                  </ul>
+                </div>
+                <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" class="card-img-top rounded-0" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <hr>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 
+                  <button type="button" class="btn btn-primary d-block w-100">Primary</button>
+
+                </div> -->
+                <!-- <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" class="card-img-bottom rounded-0" alt="..."> -->
+<!-- 
+                <div class="card-footer">
+                  Card footer
+                </div>
+              </div>
+              <div class="card text-center text-secondary border-primary shadow" >
+                <div class="card-header">
+                  <ul class="nav nav-pills card-header-pills">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="true" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                  </ul>
+                </div>
+                <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" class="card-img-top rounded-0" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <hr>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 
+                  <button type="button" class="btn btn-primary d-block w-100">Primary</button>
+
+                </div> -->
+                <!-- <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" class="card-img-bottom rounded-0" alt="..."> -->
+
+                <!-- <div class="card-footer">
+                  Card footer
+                </div>
+              </div>
+              <div class="card text-center text-secondary border-primary shadow" >
+                <div class="card-header">
+                  <ul class="nav nav-pills card-header-pills">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="true" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                  </ul> -->
+                <!-- </div>
+                <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" class="card-img-top rounded-0" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <hr>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 
+                  <button type="button" class="btn btn-primary d-block w-100">Primary</button>
+
+                </div> -->
+                <!-- <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" class="card-img-bottom rounded-0" alt="..."> -->
+<!-- 
+                <div class="card-footer">
+                  Card footer
+                </div>
+              </div>
+            </div> -->
 
 
+
+
+
+            <!-- <button class="btn btn-primary m-2">Test Btn</button> -->
+
+
+<div class="row pt-5">
+  <div class="col-6">
+        <!-- carousel -->
+        <div class="container">
+          <div id="carouselExampleAutoplaying" class="carousel  slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="1000">
+                <img src="../class one/image_one.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="1000">
+                <img src="../class one/image_one.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="1000">
+                <img src="../class one/image_one.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+  </div>
+  <div class="col-6">
+    <h1>Title</h1>
+    <p>Descroption here ..</p>
+  </div>
+</div>
+
+
+
+
+         <div class="container mt-5">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-lg-6">              <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" class="w-100" alt="...">
+                </div>
+                <div class="col-lg-6">              <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" class="w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" class="w-100" alt="...">
+            </div>
+            <div class="col-lg-12">
+              <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" class="w-100" alt="...">
+
+            </div>
+          </div>
+         </div>
+
+         <div class="container">
+   <div class="table-responsive">
+    <table class="table caption-top table-hover table-bordered">
+      <caption>List of users</caption>
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td >@mdo</td>
+          <td >@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td >Larry the Bird</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td >Larry the Bird</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        test
+      </tfoot>
+    </table>
+   </div>
+         </div>
+
+
+        <div class="container">
+          <form action="" class="form row g-2">
+            <div class="col-lg-6">
+              <label for="">name</label>
+              <input type="text" class="form-control form-control-lg " >
+  
+            </div>
+            <div class="col-lg-6">
+              <label for="">name</label>
+              <input type="text" class="form-control form-control-lg " >
+            </div>
+             <div class="col-lg-12">
+              <label for="">name</label>
+              <input type="text" class="form-control form-control-lg " >
+  
+            </div>
+
+            <div class="col-lg-3">
+              <label for="exampleDataList" class="form-label">Datalist example</label>
+              <input type="file" class="form-control" name="" id="">
+
+            </div>
+            <div class="col-lg-4">
+              <label for="exampleDataList" class="form-label">Datalist example</label>
+              <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+              <datalist id="datalistOptions">
+                <option value="San Francisco">
+                <option value="New York">
+                <option value="Seattle">
+                <option value="Los Angeles">
+                <option value="Chicago">
+              </datalist>
+            </div>
+            <div class="col-lg-5">
+              <label class="form-check-label" for="flexCheckDefault">
+                Default radio
+              </label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          
+          
+            <div class="col-lg-6">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">1</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">2</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+              <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+            </div>
+          </div>
+           
+            <div class="col-lg-3">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                            <span class="input-group-text">0.00</span>
+  
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">send</button>
+           </form>
+        </div>
 
 
     </main>
