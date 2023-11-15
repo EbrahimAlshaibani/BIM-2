@@ -2,3 +2,33 @@ composer create-project laravel/laravel first-laravel-project
 #cd first-laravel-project 
 #code .
 php artisan serve
+php artisan migrate
+
+# MVC
+php artisan make:model Car
+php artisan make:controller CarController
+php artisan make:migration create_cars_table
+
+php artisan make:model Car -mc
+php artisan make:model Car -mcr
+
+
+composer require doctrine/dbal
+
+
+composer require ajaycalicut17/laravel-trash
+
+composer require laravel/ui
+php artisan ui bootstrap --auth
+
+
+
+php artisan cache:clear
+php artisan route:clear
+php artisan config:clear
+php artisan view:clear
+
+
+php artisan migrate
+php artisan migrate:refresh
+php artisan migrate:rollback

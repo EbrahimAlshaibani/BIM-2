@@ -1,4 +1,0 @@
-CORS_ALLOWED_ORIGINS = [
-    "https://noah.togits.com",
-    "https://maliksystem-2024.web.app",
-]
