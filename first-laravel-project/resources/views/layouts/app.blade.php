@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="{{asset('asset/bs/css/bootstrap.min.css')}}">
     <link href="{{asset('assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
     <script src="{{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </head>
 <body>
     <div id="app">
@@ -57,7 +58,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{route('services.index')}}" class="nav-link" >Services</a>
+                            <a href="{{route('services.index')}}" class="nav-link" >{{ __("messages.services") }}</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{route('categories.index')}}" class="nav-link" >Categories</a>
@@ -88,9 +89,37 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4 container">
+            @if ($message = Session('success'))
+            <div class="text-center">
+                <div class="d-flex alert alert-light" >
+                    <dotlottie-player src="https://lottie.host/e27ca741-2cec-482f-8104-7c28bf9db78b/2VI9td1A6Y.json"
+                    background="transparent" 
+                    speed="1" 
+                    style="width: 35px; height: 35px;" 
+                    autoplay>
+                    </dotlottie-player>
+                    <h5>{{ $message }}</h5>
+                </div>
+            </div>
+            @endif
+            @if ($message = Session('error'))
+            <div class="text-center">
+                <div class="d-flex alert alert-light" >
+                    <dotlottie-player src="https://lottie.host/e27ca741-2cec-482f-8104-7c28bf9db78b/2VI9td1A6Y.json"
+                    background="transparent" 
+                    speed="1" 
+                    style="width: 35px; height: 35px;" 
+                    autoplay>
+                    </dotlottie-player>
+                    <h5>{{ $message }}</h5>
+                </div>
+            </div>
+            @endif
             @yield('content')
         </main>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    @yield('scripts')
 </body>
 </html>

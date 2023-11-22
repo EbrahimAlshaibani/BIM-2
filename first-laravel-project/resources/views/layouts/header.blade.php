@@ -2,7 +2,7 @@
 <div class="container d-flex justify-content-between align-items-center">
 
     <div class="logo">
-    <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1>
+    <h1 class="text-light"><a href="index.html"><span>{{__("messages.brand")}}</span></a></h1>
     <!-- Uncomment below if you prefer to use an image logo -->
     <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
     </div>
@@ -15,6 +15,14 @@
         <li><a href="{{route('portfolio')}}">Portfolio</a></li>
         <li><a href="team.html">Team</a></li>
         <li><a href="blog.html">Blog</a></li>
+        <li class="dropdown"><a href="#"><span>اللغة</span> <i class="bi bi-chevron-down m-1"></i> </a>
+            <ul>
+              <li><a href="{{route('setLang','ar')}}">{{ __("messages.Arabic") }}</a></li>
+              <li><a href="{{route('setLang','en')}}">{{ __("messages.English") }}</a></li>
+              <li><a href="{{route('setLang','de')}}">{{ __("messages.German") }}</a></li>
+              <li><a href="{{route('setLang','fr')}}">{{ __("messages.France") }}</a></li>
+            </ul>
+          </li>
         <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
         <ul>
             <li><a href="#">Drop Down 1</a></li>

@@ -13,6 +13,7 @@
                 <th>ID</th>
                 <th>Name</th>
                 <th>Products Count</th>
+                <th>Date</th>
             </tr>
         </thead>
         <tbody>
@@ -21,6 +22,7 @@
             <td>{{$hero->id}}</td>
             <td>{{$hero->name}}</td>
             <td>{{$hero->products_count}}</td>
+            <td>{{$hero->created_at}}</td>
             <td>
                 <a href="{{route('categories.edit',$hero)}}" class="btn btn-sm btn-dark">Edit</a>
                 <a href="{{route('categories.show',$hero)}}" class="btn btn-sm btn-dark">Show</a>

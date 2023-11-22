@@ -8,7 +8,8 @@
         </div>
         <div class="col-lg-6">
         <form action="" method="post">
-            <input type="email" name="email"><input type="submit" value="Subscribe">
+            <input type="email" name="email">
+            <input type="submit" value="Subscribe" style="{{ app()->getLocale()=='ar'? 'left:0': 'right:0' }}">
         </form>
         </div>
     </div>
@@ -22,22 +23,22 @@
         <div class="col-lg-3 col-md-6 footer-links">
         <h4>Useful Links</h4>
         <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            <li><i class="bx bx-chevron-{{ app()->getLocale()=='ar'? 'left': 'right' }}"></i> <a href="#">Home</a></li>
+            <li><i class="bx bx-chevron-{{ app()->getLocale()=='ar'? 'left': 'right' }}"></i> <a href="#">About us</a></li>
+            <li><i class="bx bx-chevron-{{ app()->getLocale()=='ar'? 'left': 'right' }}"></i> <a href="#">Services</a></li>
+            <li><i class="bx bx-chevron-{{ app()->getLocale()=='ar'? 'left': 'right' }}"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bx bx-chevron-{{ app()->getLocale()=='ar'? 'left': 'right' }}"></i> <a href="#">Privacy policy</a></li>
         </ul>
         </div>
 
         <div class="col-lg-3 col-md-6 footer-links">
         <h4>Our Services</h4>
         <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            <li><i class="bx bx-chevron-{{ app()->getLocale()=='ar'? 'left': 'right' }}"></i> <a href="#">Web Design</a></li>
+            <li><i class="bx bx-chevron-{{ app()->getLocale()=='ar'? 'left': 'right' }}"></i> <a href="#">Web Development</a></li>
+            <li><i class="bx bx-chevron-{{ app()->getLocale()=='ar'? 'left': 'right' }}"></i> <a href="#">Product Management</a></li>
+            <li><i class="bx bx-chevron-{{ app()->getLocale()=='ar'? 'left': 'right' }}"></i> <a href="#">Marketing</a></li>
+            <li><i class="bx bx-chevron-{{ app()->getLocale()=='ar'? 'left': 'right' }}"></i> <a href="#">Graphic Design</a></li>
         </ul>
         </div>
 

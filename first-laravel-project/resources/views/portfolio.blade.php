@@ -39,19 +39,20 @@
             @foreach ($products as $product)
             <div class="col-lg-4 col-md-6 portfolio-wrap filter-{{$product->category->name}}">
                 <div class="portfolio-item">
-                    <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                    <img src="{{ $product->images->count()!=0 ? asset( 'uploads/images/'. $product->images[0]->url) : "https://montevista.greatheartsamerica.org/wp-content/uploads/sites/2/2016/11/default-placeholder.png" }}" class="img-fluid" alt="">
                     <div class="portfolio-info">
                         <h3>{{ $product->name }}</h3>
                         <div>
-                        <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        <a href="{{ $product->images->count()!=0 ? asset( 'uploads/images/'. $product->images[0]->url) : "https://montevista.greatheartsamerica.org/wp-content/uploads/sites/2/2016/11/default-placeholder.png" }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="{{ $product->name }}"><i class="bx bx-plus"></i></a>
+                        <a href="{{ route('products.show', $product->id) }}" title="Portfolio Details"><i class="bx bx-link"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             @endforeach
-         
-
+        </div>
+        <div class="d-flex justify-content-center">
+          {{ $products->links() }}
         </div>
 
       </div>

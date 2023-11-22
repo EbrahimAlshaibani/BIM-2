@@ -17,7 +17,7 @@ class GeneralController extends Controller
     }
     function portfolio(){
         $categories = Category::with('products')->get();
-        $products = Product::with('category')->get();
+        $products = Product::with('category')->paginate(15);
         return view('portfolio',compact('categories','products'));
     }
 }

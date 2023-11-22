@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html 
+lang="{{ str_replace('_', '-', app()->getLocale()) }}"
+dir="{{ app()->getLocale()=='ar'? 'rtl': '' }}"
+>
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -26,6 +29,7 @@
 
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
     <script src="{{asset('assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
     <script src="{{asset('assets/vendor/aos/aos.js')}}"></script>
     <script src="{{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
@@ -35,6 +39,7 @@
     <script src="{{asset('assets/vendor/waypoints/noframework.waypoints.js')}}"></script>
     <script src="{{asset('assets/vendor/php-email-form/validate.js')}}"></script>
     <script src="{{asset('assets/js/main.js')}}"></script>
+    
 </body>
 </html>
 

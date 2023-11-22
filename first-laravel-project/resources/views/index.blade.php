@@ -40,9 +40,18 @@
             <div class="row">
          
 
-                @foreach ($services as $item)
+                @foreach ($services as $key => $item)
+                {{-- <style>
+                    .icon-{{$key}}-box:hover{
+                        border-color: {{$item->border_color}}
+                    }
+                </style> --}}
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                    <div class="icon-box" style="border-color: {{$item->border_color}};">
+                    <div class="icon-box icon-{{$key}}-box" onmouseover="this.style='border-color:{{$item->border_color}};';"  onmouseout="this.style='background-color:none';">
+                        {{-- <div class="icon-box icon-{{$key}}-box"
+                        style="{color: blue; background: white} 
+                            :hover {background: yellow}
+                            > --}}
                     <div class="icon" style="background: {{$item->bg_color}};" ><i class="{{$item->icon}}" style="color: {{$item->icon_color}};"></i></div>
                     <h4 class="title"><a href="">{{$item->title}}</a></h4>
                     <p class="description">{{$item->desc}}</p>

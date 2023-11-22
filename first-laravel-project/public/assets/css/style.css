@@ -1,16 +1,7 @@
-/**
-* Template Name: Moderna
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Tajawal", sans-serif;
   color: #444;
 }
 
@@ -93,7 +84,7 @@ h6,
   padding: 4px 0;
   line-height: 1;
   font-weight: 400;
-  letter-spacing: 3px;
+  /* letter-spacing: 3px; */
   text-transform: uppercase;
 }
 
@@ -2182,7 +2173,6 @@ section {
 #footer .footer-newsletter form input[type=submit] {
   position: absolute;
   top: 0;
-  right: 0;
   bottom: 0;
   border: 0;
   background: none;
@@ -2316,4 +2306,30 @@ section {
 
 #footer .credits a {
   color: #a2cce3;
+}
+/* .pagination{
+  border-color: #0b212d !important;
+  background-color: #0b212d !important;
+} */
+.page-link{
+  color: #0b212d;
+  /* border-radius: 5px !important; */
+}
+
+.page-link:first-child{
+  color: #0b212d;
+  border-radius: 50px !important;
+  margin: 0px 5px !important;
+}
+.page-link:hover{
+  color: #18d26e;
+}
+
+.active>.page-link, .page-link.active{
+  background-color:#0b212d;
+  border-color: #0b212d ;
+  color: #18d26e;
+}
+*{
+  font-family: "Tajawal", sans-serif !important;
 }
