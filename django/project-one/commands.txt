@@ -1,0 +1,23 @@
+create venv
+python -m venv .venv
+
+enter venv 
+.venv\scripts\activate
+
+install django
+pip install django
+
+create django project
+django-admin startproject cars
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+python manage.py createsuperuser
+
+
+python manage.py makemessages -l ar
+
+python manage.py compilemessages -l ar
+

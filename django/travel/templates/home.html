@@ -1,0 +1,126 @@
+
+{% extends "layouts/master.html" %}
+{% load django_template_maths %}
+
+{% block content %}
+<section>
+
+    <div class="row mt-5">
+        {% for flight in flights %}
+        <div class="col-md-6 col-lg-6  col-sm-12">
+            <div id="flightChart{{flight.pk}}" class="shadow p-3 mb-5 bg-white rounded"></div>
+        </div>
+        <script>
+            var options = {
+                series: ["{{ flight.tickets.count|div:flight.capacity |mul:100|floatformat:2 }}"],
+                chart: {
+                    height: 350,
+                    type: 'radialBar',
+                },
+                fill: {
+                    colors: ["{{flight.color}}"]
+                },
+                plotOptions: {
+                    radialBar: {
+                        hollow: {
+                            size: '80%',
+                        }
+                    },
+                },
+                dataLabels: {
+                    style: {
+                        colors: ["{{flight.color}}", '#E91E63', '#9C27B0']
+                    }
+                },
+                colors: ["{{flight.color}}",],
+                labels: ["Flight {{flight.name}} "],
+            };
+        
+            var chart = new ApexCharts(document.querySelector("#flightChart{{flight.pk}}"), options).render();
+        
+        </script>
+        {% endfor %}
+
+        <div class="col-12">
+            <div id="ticketsChart" class="shadow p-3 mb-5 bg-white rounded"></div>
+            <script>
+                var options = {
+                    series: [
+                    {% for ticket in tickets %}
+                    {
+                        name: "{{ticket.customer}}",
+                        data: [
+                            {% for customerTickets in ticket.customer.customer_tickets.all %}
+                            {{customerTickets.pk}},{{customerTickets.pk}},{{customerTickets.pk}}
+                            {% endfor %}
+                        ]
+                        },
+                    {% endfor %}
+                        ],
+                    chart: {
+                    type: 'bar',
+                    height: 350,
+                    stacked: true,
+                    toolbar: {
+                        show: true
+                    },
+                    zoom: {
+                      enabled: true
+                    }
+                  },
+                  responsive: [{
+                    breakpoint: 480,
+                    options: {
+                      legend: {
+                        position: 'bottom',
+                        offsetX: -10,
+                        offsetY: 0
+                      }
+                    }
+                  }],
+                  plotOptions: {
+                    bar: {
+                      horizontal: false,
+                      borderRadius: 10,
+                      dataLabels: {
+                        total: {
+                          enabled: true,
+                          style: {
+                            fontSize: '13px',
+                            fontWeight: 900
+                          }
+                        }
+                      }
+                    },
+                  },
+                  xaxis: {
+                    type: 'string',
+                    categories: [
+                        {% for myflight in flights %}
+                            "{{myflight}}",
+                        {% endfor %}
+                    ],
+                  },
+                  legend: {
+                    position: 'right',
+                    offsetY: 40
+                  },
+                  fill: {
+                    opacity: 1
+                  }
+                  };
+                new ApexCharts(document.querySelector("#ticketsChart"), options).render()
+            </script>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+{% endblock content %}
+
+{% block scripts %}
+
+{% endblock scripts %}

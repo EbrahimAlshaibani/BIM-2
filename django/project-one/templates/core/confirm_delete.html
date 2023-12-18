@@ -1,0 +1,9 @@
+{% extends "layouts/master.html" %}
+{% block content %}
+<form method="POST" class="row">
+{% csrf_token %}
+    <h4>Are you sure you want to delete the car {{ car }} ?</h4>
+    <button type="submit" class="btn btn-danger mt-2">Delete</button>
+    <a href="{% url "home" %}" class="btn btn-light mt-2">Cancel</a>
+</form>
+{% endblock content %}

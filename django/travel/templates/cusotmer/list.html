@@ -1,0 +1,71 @@
+{% extends "layouts/master.html" %}
+{% block content %}
+
+{% if perms.tms.add_customer %}
+    <a href="{% url "customers_create" %}" class="btn btn-sm btn-dark mt-2">Add Customer</a>
+{% endif %}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Passport</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Image</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for object in object_list %}
+        <tr>
+            <th>{{ object.first_name }} {{ object.last_name }}</th>
+            <td>{{ object.passport }}</td>
+            <td>{{ object.phone_number }}</td>
+            <td> <img src="{{ object.image.url }}" width="35" alt=""> </td>
+            <td>
+                {% if perms.tms.view_customer %}
+                <a href="{% url "customers_detail" object.pk %}" class="btn btn-sm btn-light">Show</a>
+                {% endif %}
+                {% if perms.tms.change_customer %}
+                <a href="{% url "customers_update" object.pk %}" class="btn btn-sm btn-light">Edit</a>
+                {% endif %}
+                {% if perms.tms.delete_customer %}
+                <a href="{% url "customers_delete" object.pk %}" class="btn btn-sm btn-light">Delete</a>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<nav aria-label="Page navigation example">
+    {% if is_paginated %}
+    <ul class="pagination">
+        {% if page_obj.has_previous %}
+        <li class="page-item">
+            <a class="page-link" href="?page={{page_obj.previous_page_number}}">Previous</a>
+        </li>
+        {% else %}
+        <li class="page-item disabled">
+            <a class="page-link" href="#">Previous</a>
+        </li>
+        {% endif %}
+        {% for i in paginator.page_range %}
+        {% if page_obj.number == i %}
+        <li class="page-item"><a class="page-link active">{{ i }}</a></li>
+        {% else %}
+        <li class="page-item">
+            <a class="page-link" href="?page={{ i }}">{{ i }}</a>
+        </li>
+        {% endif %} {% endfor %} {% if page_obj.has_next %}
+        <li class="page-item">
+            <a href="?page={{page_obj.next_page_number}}" class="page-link">Next</a>
+        </li>
+        {% else %}
+        <li class="page-item disabled">
+            <a class="page-link">Next</a>
+        </li>
+        {% endif %}
+    </ul>
+    {% endif %}
+</nav>
+{% endblock content %}

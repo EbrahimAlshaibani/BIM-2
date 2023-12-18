@@ -1,0 +1,77 @@
+{% extends "layouts/master.html" %}
+{% block content %}
+<a href="{% url "tickets_create" %}" class="btn btn-sm btn-dark mt-2">Add Ticket</a>
+<div class="container">
+    <form method="get" action="">
+        <h5 class="card-header">Filters</h5>
+        <div class="card-body">
+            {{ filter.form }}
+        </div>
+        <div class="card-footer text-center">
+            <input class="btn btn-secondary" type="submit" value="Filter" />
+            <input class="btn btn-secondary" type="reset" value="Reset"/>
+        </div>
+    </form>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">agnet</th>
+            <th scope="col">flight</th>
+            <th scope="col">customer</th>
+            <th scope="col">price</th>
+            <th scope="col">ticket_class</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for object in object_list %}
+        <tr>
+            <th>{{ object.name }}</th>
+            <td>{{ object.agent }}</td>
+            <td>{{ object.flight }}</td>
+            <td>{{ object.customer }}</td>
+            <td>{{ object.price }}</td>
+            <td>{{ object.ticket_class }}</td>
+            <td>
+                <a href="{% url "tickets_detail" object.pk %}" class="btn btn-sm btn-light">Show</a>
+                <a href="{% url "tickets_update" object.pk %}" class="btn btn-sm btn-light">Edit</a>
+                <a href="{% url "tickets_delete" object.pk %}" class="btn btn-sm btn-light">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<nav aria-label="Page navigation example">
+    {% if is_paginated %}
+    <ul class="pagination">
+        {% if page_obj.has_previous %}
+        <li class="page-item">
+            <a class="page-link" href="?page={{page_obj.previous_page_number}}">Previous</a>
+        </li>
+        {% else %}
+        <li class="page-item disabled">
+            <a class="page-link" href="#">Previous</a>
+        </li>
+        {% endif %}
+        {% for i in paginator.page_range %}
+        {% if page_obj.number == i %}
+        <li class="page-item"><a class="page-link active">{{ i }}</a></li>
+        {% else %}
+        <li class="page-item">
+            <a class="page-link" href="?page={{ i }}">{{ i }}</a>
+        </li>
+        {% endif %} {% endfor %} {% if page_obj.has_next %}
+        <li class="page-item">
+            <a href="?page={{page_obj.next_page_number}}" class="page-link">Next</a>
+        </li>
+        {% else %}
+        <li class="page-item disabled">
+            <a class="page-link">Next</a>
+        </li>
+        {% endif %}
+    </ul>
+    {% endif %}
+</nav>
+{% endblock content %}

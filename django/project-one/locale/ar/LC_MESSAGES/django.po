@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-03 09:17+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+#: .\core\forms.py:25
+msgid "This name is too long."
+msgstr ""
+
+#: .\core\models.py:21 .\core\models.py:30 .\core\models.py:46
+#: .\core\models.py:52
+msgid "name"
+msgstr "الاسم"
+
+#: .\core\models.py:22
+msgid "center"
+msgstr "المركز"
+
+#: .\core\models.py:27 .\salam\models.py:16
+msgid "user"
+msgstr "المستخدم"
+
+#: .\core\models.py:28
+msgid "manufacture"
+msgstr "المصنع"
+
+#: .\core\models.py:29 .\core\models.py:64 .\salam\models.py:48
+msgid "image"
+msgstr "الصوره"
+
+#: .\core\models.py:31 .\core\models.py:57
+msgid "price"
+msgstr "السعر"
+
+#: .\core\models.py:38 .\templates\core\admin\card\index.html:17
+msgid "icon"
+msgstr "الايقونة"
+
+#: .\core\models.py:39 .\core\models.py:55 .\salam\models.py:26
+#: .\templates\core\admin\card\index.html:15
+msgid "title"
+msgstr "العنوان"
+
+#: .\core\models.py:40 .\salam\models.py:27 .\salam\models.py:36
+#: .\templates\core\admin\card\index.html:16
+msgid "description"
+msgstr "الوصف"
+
+#: .\core\models.py:51
+msgid "category"
+msgstr "الصنف"
+
+#: .\core\models.py:53
+msgid "seller"
+msgstr "البائع"
+
+#: .\core\models.py:54
+msgid "url"
+msgstr "الرابط"
+
+#: .\core\models.py:56
+msgid "Dscription"
+msgstr "الوصف"
+
+#: .\core\models.py:58
+msgid "date"
+msgstr "التاريخ"
+
+#: .\core\models.py:63
+msgid "products"
+msgstr "المنتجات"
+
+#: .\salam\models.py:17
+msgid "user image"
+msgstr "صوره المستخدم"
+
+#: .\salam\models.py:18
+msgid "phone"
+msgstr "رقم الهاتف"
+
+#: .\salam\models.py:19
+msgid "address"
+msgstr "العنوان"
+
+#: .\salam\models.py:25 .\salam\models.py:35
+msgid "author"
+msgstr "الكاتب"
+
+#: .\salam\models.py:28
+msgid "post image"
+msgstr "صوره المنشور"
+
+#: .\salam\models.py:34
+msgid "post"
+msgstr "المنشور"
+
+#: .\salam\models.py:37
+msgid "is hidden"
+msgstr "مخفي"
+
+#: .\salam\models.py:47
+msgid "Images"
+msgstr "الصور"
+
+#: .\templates\core\admin\card\index.html:6
+msgid "search"
+msgstr "بحث"
+
+#: .\templates\core\admin\card\index.html:8
+msgid "add"
+msgstr "اضافة"
+
+#: .\templates\core\admin\card\index.html:8
+msgid "card"
+msgstr "بطاقة"
+
+#: .\templates\core\admin\card\index.html:14
+msgid "id"
+msgstr "الرقم"
+
+#: .\templates\core\admin\card\index.html:18
+msgid "actions"
+msgstr "الاجرائات"
+
+#: .\templates\core\admin\card\index.html:29
+msgid "edit"
+msgstr "تعديل"
+
+#: .\templates\core\admin\card\index.html:37
+msgid "Sorry, there are not"
+msgstr "عذرا , لا يوجد"
+
+#: .\templates\core\admin\card\index.html:37
+msgid "cards"
+msgstr "بطائق"

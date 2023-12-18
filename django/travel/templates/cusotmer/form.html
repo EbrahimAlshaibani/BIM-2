@@ -1,0 +1,8 @@
+{% extends "layouts/master.html" %}
+{% block content %}
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit" class="btn btn-sm btn-dark mt-2">Save</button>
+    </form>
+{% endblock content %}

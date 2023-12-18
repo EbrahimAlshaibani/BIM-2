@@ -1,0 +1,62 @@
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+form {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+    margin-bottom: 15px;
+}
+
+.card-footer {
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+    border: 1px solid #6c757d;
+    border-radius: 3px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: #495057;
+    border-color: #495057;
+}
+
+/* Style form inputs */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style checkboxes and radio buttons */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+}

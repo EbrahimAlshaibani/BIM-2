@@ -1,0 +1,44 @@
+{% extends "core/admin/layouts/master.html" %}
+{% load i18n %}
+{% block content %}
+    <form method="get" class="filter-form">
+        {{ cards.form.as_div }}
+        <button class="btn btn-dark btn-sm m-2">{% trans "search" %}</button>
+    </form>
+    <a href="{% url 'admin_card_create' %}" class="btn btn-dark btn-sm m-2">{% trans "add" %} {% trans "card" %}</a>
+
+    {% if cards.qs %}
+    <table class="table text-center m-2">
+        <thead>
+            <tr>
+                <th>{% trans "id" %}</th>
+                <th>{% trans "title" %}</th>
+                <th>{% trans "description" %}</th>
+                <th>{% trans "icon" %}</th>
+                <th>{% trans "actions" %}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for card in cards.qs %}
+            <tr>
+                <td>{{ card.id }}</td>
+                <td>{{ card.title }}</td>
+                <td>{{ card.desc }}</td>
+                <td><i class="{{ card.icon }}"></i></td>
+                <td>
+                    <a href="{% url 'admin_card_edit' card.id %}" class="btn btn-light btn-sm" >{% trans "edit" %}</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <div class="alert alert-light text-center m-2 " role="alert">
+        <strong>{% trans "Sorry, there are not" %} </strong> {% trans "cards" %}
+    </div>
+    
+    {% endif %}
+{% endblock content %}
+
+
+
